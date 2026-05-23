@@ -1,0 +1,68 @@
+HTML Core Concepts Cheatsheet
+
+1. Emmet Shortcut for HTML Boilerplate
+------------------------------------
+To instantly create the starter code (boilerplate) for an HTML file in code editors like VS Code, type:
+! and press Tab (or Enter)
+
+Shortcut: ! + Tab
+
+
+2. What is DOCTYPE in HTML?
+---------------------------
+<!DOCTYPE html> is an instruction written at the very top of your HTML file.
+- What it does: It tells the web browser exactly what version of HTML the page is using.
+- Why it matters: Writing <!DOCTYPE html> ensures the browser loads your page in HTML5 (the modern standard) so everything displays correctly and doesn't break into old legacy formats.
+
+
+3. What is a Void Element?
+--------------------------
+A Void Element is an HTML element that CANNOT have any content inside it and DOES NOT have a closing tag (like </tag>). It is completely self-contained.
+
+Examples:
+- <br>    : Creates a line break (forces text to a new line).
+- <img>   : Inserts an image.
+- <hr>    : Draws a horizontal line across the page.
+- <input> : Creates a text box, checkbox, or button for user input.
+
+
+4. Difference Between Elements and Attributes
+----------------------------------------------
+Think of HTML like a building: Elements are the building blocks, and Attributes describe those blocks.
+
+- Element: This is the complete component, from the starting tag to the closing tag, including the text or content inside.
+  Example: <p>Hello World</p> is a paragraph element.
+
+- Attribute: This provides extra information, configuration, or settings INSIDE the opening tag. It usually comes in a name="value" pair.
+  Example: In <p align="center">Hello World</p>, the align="center" part is the attribute telling the browser how to position the element.
+
+
+5. What are HTML Entities and Why are They Needed?
+--------------------------------------------------
+HTML Entities are special codes used to display reserved characters or invisible symbols on a webpage. They always start with an ampersand (&) and end with a semicolon (;).
+
+Why do we need them?
+1. To avoid confusing the browser: If you want to type the "less than" sign (<) as actual text, you cannot just type "<" because the browser will think you are opening a new HTML tag. Instead, you write &lt;.
+2. To display unique symbols: You use them for characters not found on a standard keyboard, like the copyright symbol (&copy; displays as ©).
+
+
+6. What are Meta Tags and Why are They Used?
+---------------------------------------------
+Meta tags are small pieces of information hidden inside the <head> section of your HTML document. Regular visitors cannot see them directly on the webpage.
+
+Why they are used:
+- To control browser behavior: For example, <meta name="viewport" content="..."> tells smartphones how to scale the webpage so it fits perfectly on small mobile screens.
+- For Search Engines (SEO): They provide keywords and descriptions so Google and other search engines know exactly what your website is about.
+
+
+7. What is the Best Way to Add Images to a Website?
+----------------------------------------------------
+The best way to add an image is to use the <img> tag with three crucial attributes: the source (src), the alternative text (alt), and loading optimization.
+
+Best Practice Example:
+<img src="photo.jpg" alt="A golden retriever playing with a red ball" loading="lazy">
+
+Why this is the best way:
+- src="photo.jpg"   : Tells the browser exactly where to find the image file.
+- alt="..."         : Describes the image in text. This is highly important for accessibility (screen readers for visually impaired users) and if the internet is too slow to load the picture.
+- loading="lazy"    : Tells the browser to only load the image when the user scrolls close to it, making your website load much faster.
